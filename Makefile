@@ -12,31 +12,31 @@ all: compile doc
 
 .PHONY: run
 run: compile
-	./hurtdeni
+	./Ant_Wars
 
 .PHONY: compile
-compile: hurtdeni
+compile: Ant_Wars
 
 doc: Doxyfile $(HEADERS)
 	doxygen Doxyfile
 
 .PHONY: clean
 clean:
-	rm -rf hurtdeni build/ doc/ 2>/dev/null
+	rm -rf Ant_Wars build/ doc/ 2>/dev/null
 
 .PHONY: memrun
 memrun: compile
-	valgrind ./hurtdeni
+	valgrind ./Ant_Wars
 
 .PHONY: test
 test: compile
-	./hurtdeni test
+	./Ant_Wars test
 
 .PHONY: memtest
 memtest: compile
-	valgrind ./hurtdeni test
+	valgrind ./Ant_Wars test
 
-hurtdeni: build/Ant_Wars
+Ant_Wars: build/Ant_Wars
 	cp $< $@
 
 build/Ant_Wars: $(OBJECTS)
