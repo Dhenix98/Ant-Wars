@@ -1,26 +1,25 @@
 #include "CApplication.h"
 
 /*! \mainpage Ant Wars
- * \section O_hře
- * Tato hra je válčení mezi mravenci, kteří se snaží ovládnout celý mravenčí svět!\n
- * Vyhraje pouze ten nejchytřejší a nejvytrvalejší.\n
- * \section Ovládání
+ * \section About_game
+ * This game is a war between ants, who are trying to conquer the whole ant world!\n
+ * Only the smartest and the tenacious will win.\n
+ * \section Controls
  * \subsection step1 Menu
- * Všechna Menu se ovládá myší mačkáním tlačítek, popřípadě ESC, který slouží k vrácení se na minulou "stránku".
- * \subsection step2 Hra
- * Hra samotná se také ovládá myší a ESC slouží pouze na Pauzu/návrat do menu.\n
- * K útoku nebo podpoře musí hráč vybrat některé svoje hnízdo,\n
- * poté vybere cílové hnízdo a pokud nebude mít v cestě překážku,tak pošle armádu.\n
- * Pokud hnízdo není hrače, tak zautočí a pokud cílové hnízdo je hráče, tak ho podpoří.\n
- * Pokud chce hráč ukončit útok, tak zmáčkne svoji linii/armádu a ta ustoupí zpátky do svého hnízda.\n
- * Hráč vyhrává pokud dobije všechna hnízda (nemusí neutrální).
- * \section Mapy
- * ve složce examples/maps jsou dve složky testMaps a realMaps.\n
- * TestMaps slouží pouze k vyzkoušení funkcí hry, a pokud je chceme aktivovat, tak je zkopírujeme o složku níž.\n
- * RealMaps slouží ke hraní a pokud je chceme aktivovat, tak stejně jako testMaps, je zkopírujeme o složku níž.
- * \section Cheaty
- * výhra  = zmáčknutí 'w'\n
- * prohra = zmáčknutí 'e'
+ * All menu pages are controlled by mouse-pressing or pressing the ESC key, which is used to return to the previous state.\n
+ * \subsection step2 Game
+ * The game is also controlled by the mouse and ESC key, which are used to pause or go to the menu.\n
+ * To attack or support, the player has to select any of his hives,\n
+ * then he has to select the target hive, and if there isn't an obstacle in any way, the source hive will send the army.\n
+ * If the targeted hive is not owned by the player, then it will be attacked; if the hive is owned by the player, then it will be supported.\n
+ * If the player wishes to end the attack or support, then he can press the army or line of ants, and the army will retreat to its hive.\n
+ * The player wins if he conquers all the hives (not including neutral ones).\n
+ * \section Maps
+ * All levels are saved in the directory "maps".\n
+ * If you wish, you can add new maps if they have the correct structure and name.\n
+ * \section Cheats
+ * Win  = by pressing 'w'\n
+ * Defeat = by pressing 'e'\n
  */
 
 int main(int argc, char *args[])
