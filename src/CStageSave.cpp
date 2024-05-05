@@ -249,7 +249,7 @@ void CStageSave::updateDeleteButton() {
 
 void CStageSave::createDirectory() {
 #ifdef __linux__
-	mkdir(REL_SAVE_FILE_PATH.c_str(), 755);
+	mkdir(REL_SAVE_FILE_PATH.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
 #elif _WIN32
 	_mkdir(REL_SAVE_FILE_PATH.c_str());
 #endif
