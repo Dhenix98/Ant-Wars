@@ -32,5 +32,5 @@ make doc
 
 To run the game, type the command in a terminal: 
 ```sh
-./Ant-Wars
+./Ant_Wars
 ```
